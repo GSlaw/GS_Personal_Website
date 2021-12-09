@@ -1,0 +1,22 @@
+{
+  "name": "2700_project_2_misty_night_park",
+  "version": "1.0.0",
+  "description": "Boilerplate for creating WebVR scenes with [A-Frame](https://aframe.io).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSlaw/2700_Project_2_Misty_Night_Park.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GSlaw/2700_Project_2_Misty_Night_Park/issues"
+  },
+  "homepage": "https://github.com/GSlaw/2700_Project_2_Misty_Night_Park#readme",
+  "dependencies": {
+    "aframe-rain": "^1.0.2"
+  }
+}
