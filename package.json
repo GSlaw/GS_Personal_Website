@@ -18,5 +18,6 @@
   "homepage": "https://github.com/GSlaw/2700_Project_2_Misty_Night_Park#readme",
   "dependencies": {
     "aframe-rain": "^1.0.2"
-  }
+  },
+  "devDependencies": {}
 }
