@@ -1,0 +1,14 @@
+.myEmbeddedScene {
+	height: 400px;
+	width: 600px;
+}
+
+.a-scene {
+	height: 300px;
+	width: 600px;
+}
+
+.gap {
+	width: 100%;
+	height: 10px;
+}

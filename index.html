@@ -9,17 +9,20 @@
   <link rel="stylesheet" href="css/Style_Sheet_2.css">
   <link rel="stylesheet" href="css/Style_Sheet_3.css">
   <link rel="stylesheet" href="css/Style_Sheet_4.css">
-  <style>
-  body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-  .w3-row-padding img {margin-bottom: 12px}
-  /* Set the width of the sidebar to 120px */
-  .w3-sidebar {width: 120px;background: #222;}
-  /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-  #main {margin-left: 120px}
-  /* Remove margins from "page content" on small screens */
-  @media only screen and (max-width: 600px) {#main {margin-left: 0}}
-  </style>
+  <link rel="stylesheet" href="css/VR_Style.css">
   <link href="https://vjs.zencdn.net/7.6.0/video-js.css" rel="stylesheet">
+
+  <style>
+      body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+      .w3-row-padding img {margin-bottom: 12px}
+      /* Set the width of the sidebar to 120px */
+      .w3-sidebar {width: 120px;background: #222;}
+      /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+      #main {margin-left: 120px}
+      /* Remove margins from "page content" on small screens */
+      @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+  </style>
+  
 </head>
 
 <!--Changes the background color-->
@@ -38,6 +41,9 @@
   <a href="#videos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <p>MOTION</p>
   </a>
+  <a href="#tech" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <p>TECH</p>
+  </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <p>STILL</p>
   </a>
@@ -45,6 +51,7 @@
     <p>CONTACT</p>
   </a>
 </nav>
+
 
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
@@ -57,31 +64,45 @@
   </div>
 </div>
 
+
 <!-- Page Content -->
 <div class="w3-padding-large" id="main">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"> Gerhardt.</h1>
-    <h3>|  Art  |  Tech  |  Story  |</h3>
+    <h3>-   Art   |   Tech   |   Story   -</h3>
     <br>
     <br>
-    <img src="images/moonshine-about-team-6.jpg" alt="profile picture" class="w3-image" width="992" height="1108">
+    <img src="images/moonshine-about-team-6.jpg" alt="profile picture" class="w3-image" width="800">
   </header>
 
   <!-- About Section -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-light-grey">Me</h2>
     <hr style="width:48px" class="w3-opacity">
-    <p>Atlanta based creative and science/technology enthusiast. Two years of film production experience, ten years of film post-production experience, former managing partner of a post-production house, occasional photographer, lifelong storyteller, frequent goal-setter, and perpetual lover of the natural world. 
+    <p>Atlanta based television and film editor with interests in machine learning and artificial intelligence.
+      Two years of on set film production experience,
+      ten years of film post-production experience, former managing partner of a post-production house
+      , occasional photographer, lifelong storyteller, and lover of the natural world.
 
-    <br>
-    <br>
-    <br>
+  <div class="w3-center w3-padding-32">
     Never be satisfied. Never stop learning. Leave no stone unturned. 
-    <br>
-    <br>
-    <br>
-      
+  </div>  
+
+    <!-- Software Image Grid -->
+    <div class="myGallery">
+      <img src="images/image-1.jpg" />
+      <img src="images/PSD.png" />
+      <img src="images/PSD2.png" />
+      <img src="images/AE.png" />
+      <img src="images/Aframe.png" />
+      <img src="images/Java.png" />
+      <img src="images/Html:CSS:JS.png" />
+      <img src="images/Figma.png" />
+    </div>
+
+    <!-- Skill Bars -->
+
     <h3 class="w3-padding-16 w3-text-light-grey">My Skills</h3>
     <hr style="width:105px" class="w3-opacity">
     <p class="w3-wide">Creative Editorial</p>
@@ -96,7 +117,6 @@
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:28px;width:70%"></div>
     </div><br>
-  
 
 
 
@@ -104,7 +124,7 @@
   <div class="w3-padding-64 w3-content" id="videos">
     <h2 class="w3-text-light-grey">My Motion</h2>
     <hr style="width:160px" class="w3-opacity">
-    <p>Creative editorial performed by Gerhardt</p>
+    <p>Selectetd works - creative editorial by Gerhardt</p>
 
     <!-- Grid for videos -->
     <div class="w3-row-padding" style="margin:0 -16px">
@@ -154,11 +174,357 @@
   <!-- End Video Portfolio Section -->
   </div>
 
+
+  <!-- IMDB -->
+  <div class="w3-button:hover w3-center">
+    <a href="https://www.imdb.com/name/nm5191257/?ref_=fn_al_nm_1">
+      <img src="images/IMDB_LOGO.png" alt="IMDB" style="width:200px; margin-top: 60px;">
+    </a>
+  </div>
+
+
+  <!-- Tech Portfolio Section -->
+  <div class="w3-padding-64 w3-content" id="tech">
+    <h2 class="w3-text-light-grey">My VR</h2>
+    <hr style="width:124px" class="w3-opacity">
+    <p>VR content: a recreation of <i>Misty Night Park</i> by Leonid Afremov in A-Frame </p>
+
+    <!-- Grid for viewer -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-col">
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <style>
+          #myEmbeddedScene {
+            width:980px;
+            height:650px;
+          }
+        </style>
+        <div id="myEmbeddedScene">
+          <a-scene embedded fog="type: linear; color: #8ad1f0; near:0; far:200; density: .00000000001">
+            <!----------- ASSETS ------------->
+            <a-assets>
+              <img id="brickTexture"
+                src="2700_Project_2_Misty_Night_Park/addTexture/herringbone_brick.jpg">
+              <img id="oilTexture"
+                src="2700_Project_2_Misty_Night_Park/addTexture/113405731-abstract-oil-painting-on-canvas-blue-background.jpeg">
+              <img id="groundTexture"
+                src="2700_Project_2_Misty_Night_Park/addTexture/113405731-abstract-oil-painting-on-canvas-blue-background.jpeg">
+              <img id="lightTexture"
+                src="2700_Project_2_Misty_Night_Park/addTexture/Flare_01.png">
+              <img id="concreteTexture"
+                src="2700_Project_2_Misty_Night_Park/addTexture/Concrete.jpeg">
+              <a-asset-item id="woman-obj"
+                src="2700_Project_2_Misty_Night_Park/addModel/Woman/Girl_in_white_tight_dress_0327_obj/Girl_in_white_tight_dress_0327.obj"></a-asset-item>
+              <a-asset-item id="woman-mtl"
+                src="2700_Project_2_Misty_Night_Park/addModel/Woman/Girl_in_white_tight_dress_0327_obj/Girl_in_white_tight_dress_0327.mtl"></a-asset-item>
+              <a-asset-item id="man-gtlf"
+                src="2700_Project_2_Misty_Night_Park/addModel/man/scene.gltf"></a-asset-item>
+            </a-assets>
+      
+          <!----------- GLOWS ------------->
+          <!-- RIGHT Side (near to far)-->
+            <a-image src="#lightTexture" scale="4, 4, 4" position="-6.9   7.7 3.8" rotation="0 90 90"></a-image>
+            <a-image src="#lightTexture" scale="4, 4, 4" position="-7.2 7.9 -6.3" rotation="0 45 90"></a-image> 
+            <a-image src="#lightTexture" scale="4, 4, 4" position="-7 7.9 -20" rotation="0 40 90"></a-image>
+            <a-image src="#lightTexture" scale="4, 4, 4" position="-6.8 7.9 -35.1" rotation="0 30 90"></a-image>
+            <a-image src="#lightTexture" scale="4, 4, 4" position="-6.8 7.9 -50.1" rotation="0 20 90"></a-image>
+            <a-image src="#lightTexture" scale="4, 4, 4" position="-6.8 7.9 -65.1" rotation="0 20 90"></a-image>
+      
+            <!-- LEFT Side (near to far)-->
+            <a-image src="#lightTexture" scale="4, 4, 4" position="6.9   7.7 3.8" rotation="0 -90 90"></a-image>
+            <a-image src="#lightTexture" scale="4, 4, 4" position="7.2 7.9 -6.3" rotation="0 -45 90"></a-image>  
+            <a-image src="#lightTexture" scale="4, 4, 4" position="7 7.9 -20" rotation="0 -40 90"></a-image> 
+            <a-image src="#lightTexture" scale="4, 4, 4" position="6.8 7.9 -35.1" rotation="0 -30 90"></a-image>
+            <a-image src="#lightTexture" scale="4, 4, 4" position="6.8 7.9 -50.1" rotation="0 -20 90"></a-image>
+            <a-image src="#lightTexture" scale="4, 4, 4" position="6.8 7.9 -65.1" rotation="0 -20 90"></a-image>
+      
+          <!----------- PRIMATIVES ------------->
+          <!-- Sky -->
+            <a-sky src="#oilTexture" color=#143d66 repeat="5 5"></a-sky>
+          <!-- Planes -->
+            <a-plane src="#groundTexture" color=#151242 position="0 -.01 0"
+              rotation="-90 0 0" width="600" height="400" repeat=".2 .2">
+            </a-plane>
+            <a-plane src="#brickTexture" position="0 0 -30" rotation="-90 0 0" width="9" height="200"
+              repeat="5 50">
+            </a-plane>
+            
+          <!----------- LIGHTING ------------->
+          <!-- Light On Trees -->
+              <a-entity light="type: hemisphere; color: #07013d; groundColor: #ad3505; intensity: 2" position="0 10 10"></a-entity>
+          <!-- Light On People -->
+              <a-entity light="type: spot; intensity: 2.5; target: #man; angle: 7; penumbra: 1;" position="30 20 50"></a-entity>
+          <!-- Light On Bench -->
+              <a-entity light="type: spot; intensity: 3.5; target: #bench; angle: 4; penumbra: 1;" position="30 20 50"></a-entity>
+            
+          <!----------- CAMERA ------------->
+            <a-entity fov="35" rotation="10 10 0" position="2.5 1.1 3">
+              <a-camera></a-camera>
+            </a-entity>
+      
+      
+          <!------------------------------------------------------------------------------------------->
+          <!------------------------------------- MODELS ---------------------------------------------->
+          <!------------------------------------------------------------------------------------------->
+      
+          <!-- HERO -->
+          <!-- Bench -- https://sketchfab.com/3d-models/classic-park-bench-low-poly-01a5b64427984632bb44242da3813bb1-->
+            <a-gltf-model
+              id="bench" scale= ".25 .25 .25" position="-2.5 0 -4.5" rotation="0 0 0"
+              src="2700_Project_2_Misty_Night_Park/addModel/bench/bench.glb">
+            </a-gltf-model>
+            <!-- Man -- https://sketchfab.com/3d-models/man-in-a-suit-scanned-model-94a820c49db24189a617a0b48061085a-->
+              <a-gltf-model
+              id="man" scale= ".02 .02 .02" position="0 0 -15"
+              src="https://cdn.glitch.com/918f8ca2-f6ee-44f9-a824-d242d3ee7d2b%2Fman_suit.glb?v=1632375653907">
+            </a-gltf-model> 
+            <!-- Woman -- https://www.cgtrader.com/3d-models/character/woman/girl-in-white-tight-dress-0327-613c4885-854f-47b8-805b-e7cca7f707e6-->
+            <a-gltf-model
+              id="woman" scale= ".02 .02 .02" position="1 .07 -15"
+              src="https://cdn.glitch.com/918f8ca2-f6ee-44f9-a824-d242d3ee7d2b%2Fwoman_white.glb?v=1632433755788">
+            </a-gltf-model>
+          <!-- Umbrella -- https://sketchfab.com/3d-models/umbrella-4754f1bc1d6341d19b313ad6a51417de-->
+            <a-gltf-model
+              id="umbrella" scale= ".25 .2 .2" rotation="0 190 0" position=".2 2.5 -15"
+              src="2700_Project_2_Misty_Night_Park/addModel/umbrella/umbrella_white_01.glb">
+            </a-gltf-model>
+            
+          <!-- TREES -->
+            <!-- LEFT -->
+              <!-- Background Trees Row 01 -- https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7-->
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-70 0 10" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-70 0 -100" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-50 0 -220" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-100 0 -150" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+      
+              <!-- Background Trees Row 02 -- https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7 -->
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-45 0 0"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+                <a-gltf-model
+                  id="tree01" scale= ".05 .07 .05" rotation="0 90 0" position="-55 0 -80"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-35 0 -200"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+      
+              <!-- Background Trees Row 02 -- https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7 -->
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-145 0 0"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+                <a-gltf-model
+                  id="tree01" scale= ".05 .055 .05" rotation="0 90 0" position="-100 0 -80"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="-135 0 -200"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>  
+            
+              <!-- Foreground Trees -- https://sketchfab.com/3d-models/laurel-tree-low-poly-f1a5baa9d2e24f27a98be75f23f38f35-->
+                <a-gltf-model
+                  id="tree01" scale= ".08 .08 .02" position="-15 0 0" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>
+                <a-gltf-model
+                  id="tree01" scale= ".09 .08 .02" position="-15 0 -12" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>
+                <a-gltf-model
+                  id="tree01" scale= ".07 .08 .02" position="-15 0 -25" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".04 .09 .02" position="-15 0 -42" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".06 .08 .02" position="-15 0 -60" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="tree01" scale= ".05 .08 .02" position="-15 0 -80" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="tree01" scale= ".08 .09 .02" position="12 0 -85" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="tree01" scale= ".08 .08 .02" position="10 0 -100" fog="true"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>
+            
+            <!-- RIGHT -->
+              <!-- Background Trees Row 01 -- https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7-->
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="50 0 0"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="40 0 -70"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="55 0 -200"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+                
+              <!-- Background Trees Row 02 --https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7-->  
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="50 0 10"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 270 0" position="55 0 -100"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>    
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="50 0 -210"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+      
+              <!-- Background Trees Row 03 --https://sketchfab.com/3d-models/low-poly-tree-set-free-download-921610399c904471ab7ca346dbeeb7c7-->  
+                <a-gltf-model
+                  id="tree01" scale= ".05 .055 .05" rotation="0 90 0" position="150 0 10"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="tree01" scale= ".05 .06 .05" rotation="0 270 0" position="100 0 -100"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>    
+                <a-gltf-model
+                  id="tree01" scale= ".05 .05 .05" rotation="0 90 0" position="150 0 -210"
+                  src="2700_Project_2_Misty_Night_Park/addModel/low-poly__tree_set_free_download/lowpoly_tree_set.glb">
+                </a-gltf-model>
+            
+              <!-- Foreground Trees -- https://sketchfab.com/3d-models/laurel-tree-low-poly-f1a5baa9d2e24f27a98be75f23f38f35-->     
+                <a-gltf-model
+                  id="tree01" scale= ".07 .08 .02" position="11 0 0"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="tree01" scale= ".06 .08 .02" position="12 0 -12"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".04 .08 .02" position="13 0 -25"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".08 .08 .02" position="11 0 -42"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".04 .08 .02" position="12 0 -60"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".04 .08 .02" position="7 0 -85"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="tree01" scale= ".05 .08 .02" position="-10 0 -100"
+                  src="2700_Project_2_Misty_Night_Park/addModel/laurel_tree_-_low_poly/laurel_tree.glb">
+                </a-gltf-model>
+      
+            <!-- LAMP POSTS -- https://sketchfab.com/3d-models/street-lamp-6addefc69e1c46e388d2a40dbebf1aa1--> 
+              <!-- LEFT -->      
+                <a-gltf-model
+                  id="lamp" position="3 -3 14" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="lamp" position="3 -3 4" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>     
+                <a-gltf-model
+                  id="lamp" position="3 -3 -10" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="3 -3 -25" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="3 -3 -40" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="3 -3 -55" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>
+      
+              <!-- RIGHT -->    
+                <a-gltf-model
+                  id="lamp" position="17 -3 14" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="17 -3 4" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="17 -3 -10" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="17 -3 -25" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="17 -3 -40" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>      
+                <a-gltf-model
+                  id="lamp" position="17 -3 -55" scale="2 2 2"
+                  src="2700_Project_2_Misty_Night_Park/addModel/street_lamp/lamp.glb">
+                </a-gltf-model>
+          
+            <!-- MISC -->        
+              <a-gltf-model
+                id="bricks" scale= "100 100 100" position="0 0 -40"
+                src="2700_Project_2_Misty_Night_Park/addTexture/herringbone_brick.jpg">
+              </a-gltf-model>
+          </a-scene>
+        </div>
+      </div>
+    </div>
+    <div class="gap"></div>
+          
+    <!-- Original Artwork -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-col">
+        <img src="images/MistyNightPark_Orig.jpeg" style="width:100%">
+      </div>
+    </div>
+  </div>
+  <!-- End Tech Portfolio Section -->
+
+
     
   <!-- Photo Portfolio Section -->
   <div class="w3-padding-64 w3-content" id="photos">
     <h2 class="w3-text-light-grey">My Still</h2>
     <hr style="width:110px" class="w3-opacity">
+    <p>Selected photographs from my travels. </p>
+
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
@@ -170,6 +536,7 @@
       </div>
 
       <div class="w3-half">
+        <img src="images/IMG_7628-Edit.jpg" style="width:100%">
         <img src="images/Sycamore_IMG_5665.png" style="width:100%">
         <img src="images/IMG_5959-2_kelsey.jpeg" style="width:100%">
         <img src="images/WATERFALL_FOR_PRINT_RGB_300DPI_20190818.jpeg" style="width:100%">
@@ -180,6 +547,8 @@
     </div>
   <!-- End Photo Portfolio Section -->
   </div>
+
+
 
 
   <!-- Contact Section -->
